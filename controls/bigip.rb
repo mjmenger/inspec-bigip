@@ -93,6 +93,7 @@ control "bigip-telemetry-streaming-version" do
             method: 'GET',
             ssl_verify: false).body) do
         its('version') { should eq TS_VERSION }
+
   end
 end
 
