@@ -17,7 +17,7 @@ depends:
     git: https://github.com/mjmenger/inspec-bigip
     branch:  master
 ```
-and indicate which controls to use in your control ruby file
+and indicate which controls to use in your control ruby file. By commenting out or removing the ```control``` lines below, you can run only the controls you find necessary.
 ```ruby
 require_controls 'inspec-bigip' do
   control 'bigip-connectivity'
