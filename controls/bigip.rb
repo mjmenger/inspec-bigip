@@ -100,7 +100,7 @@ control "bigip-licensed" do
   impact 1.0
   title "BIGIP has License"
   describe http("https://#{BIGIP_HOST}:#{BIGIP_PORT}/mgmt/tm/sys/license",
-            auth: {user: 'admin', pass: input('bigip_password')},
+            auth: {user: BIGIP_USER, pass: BIGIP_PASSWORD },
             method: 'GET',
             ssl_verify: false) do
     its('body') { should match /registrationKey/ }
