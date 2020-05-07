@@ -13,13 +13,13 @@ This InSpec profile evaluates the following:
 In order to reference the profile you can include it as a dependency in your *inspec.yml* file
 ```yaml
 depends:
-  - name: inspec-bigip
+  - name: bigip-atc
     git: https://github.com/mjmenger/inspec-bigip
     branch: master
 ```
 and indicate which controls to use in your control ruby file. By commenting out or removing the ```control``` lines below, you can run only the controls you find necessary.
 ```ruby
-require_controls 'inspec-bigip' do
+require_controls 'bigip-atc' do
   control 'bigip-connectivity'
   control 'bigip-declarative-onboarding'
   control 'bigip-declarative-onboarding-version'
