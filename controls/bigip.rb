@@ -98,7 +98,7 @@ end
 
 control "bigip-licensed" do
   impact 1.0
-  title "BIGIP has License"
+  title "BIG-IP has an active license"
   describe http("https://#{BIGIP_HOST}:#{BIGIP_PORT}/mgmt/tm/sys/license",
             auth: {user: BIGIP_USER, pass: BIGIP_PASSWORD },
             method: 'GET',
