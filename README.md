@@ -15,7 +15,7 @@ In order to reference the profile you can include it as a dependency in your *in
 depends:
   - name: inspec-bigip
     git: https://github.com/mjmenger/inspec-bigip
-    branch:  master
+    branch: master
 ```
 and indicate which controls to use in your control ruby file. By commenting out or removing the ```control``` lines below, you can run only the controls you find necessary.
 ```ruby
