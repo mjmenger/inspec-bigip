@@ -66,7 +66,7 @@ control "bigip-application-services-version" do
             params: {format: 'html'},
             method: 'GET',
             ssl_verify: false).body) do
-        its([0,'version']) { should eq AS3_VERSION }
+        its('version') { should eq AS3_VERSION }
   end
 end
 
@@ -92,7 +92,8 @@ control "bigip-telemetry-streaming-version" do
             params: {format: 'html'},
             method: 'GET',
             ssl_verify: false).body) do
-        its([0,'version']) { should eq TS_VERSION }
+        its('version') { should eq TS_VERSION }
+
   end
 end
 
