@@ -38,15 +38,15 @@ inspec exec https://github.com/mjmenger/inspec-bigip.git
 ```
 Please refer to the [InSpec documentation](https://inspec.io) for more elaborate variants on these use cases and further use cases not documented here.
 
-The profile requires a set of inputs which can be provided on the command line or with an input file. We listed the necessary inputs below in a sample YAML input file
+The profile uses a set of inputs which can be provided on the command line or with an input file. We listed the necessary inputs below in a sample YAML input file
 ```yaml
-bigip_address: FQDN or ip address of the BIG-IP to test
-bigip_port: the port for the BIG-IP management service, commonly 443
-user: the user account with which to authenticate to the BIG-IP
-password: the password to use to authenticate to the BIG-IP
-do_version: the expected version of declarative onboarding
-as3_version: the expected version of application services
-ts_version: the expected version of telemetry streaming
+bigip_address: FQDN or ip address of the BIG-IP to test - this is required
+bigip_port: the port for the BIG-IP management service, commonly 443 - this is required
+user: the user account with which to authenticate to the BIG-IP - this defaults to admin
+password: the password to use to authenticate to the BIG-IP - this is required
+do_version: the expected version of declarative onboarding - this is optional
+as3_version: the expected version of application services - this is optional
+ts_version: the expected version of telemetry streaming - this is optional
 ```
 
 Please refer to the [InSpec documentation for inputs](https://www.inspec.io/docs/reference/inputs/) for more detail
