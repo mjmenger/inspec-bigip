@@ -1,3 +1,6 @@
+# Archived
+This repository is no longer maintained. Please use [F5 Solutions Engineering](https://f5solutionsengineering.github.io/)'s [BIG-IP ATC Ready](https://github.com/F5SolutionsEngineering/big-ip-atc-ready) InSpec profile.
+
 ## BIG-IP Automation Toolchain InSpec Profile
 
 This InSpec profile evaluates the following:
